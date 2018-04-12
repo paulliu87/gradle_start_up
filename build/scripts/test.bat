@@ -63,10 +63,10 @@ set CMD_LINE_ARGS=%*
 :execute
 @rem Setup the command line
 
-set CLASSPATH=%APP_HOME%\lib\test.jar;%APP_HOME%\lib\guava-21.0.jar
+set CLASSPATH=%APP_HOME%\lib\gs-gradle-0.1.0.jar;%APP_HOME%\lib\guava-21.0.jar;%APP_HOME%\lib\joda-time-2.2.jar
 
 @rem Execute test
-"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %TEST_OPTS%  -classpath "%CLASSPATH%" App %CMD_LINE_ARGS%
+"%JAVA_EXE%" %DEFAULT_JVM_OPTS% %JAVA_OPTS% %TEST_OPTS%  -classpath "%CLASSPATH%" hello.HelloWorld %CMD_LINE_ARGS%
 
 :end
 @rem End local scope for the variables with windows NT shell
